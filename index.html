@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Totoro's Calculations</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<style>
+	.col-sm-8{
+	background-color: #B0C5A4;
+	border: 3px dashed #ffffff;
+	align-content: center;
+	width: 50%; 
+        margin: 0 auto; 
+        left: 50%; 
+
+    border-radius: 20px;
+}
+
+
+.container{
+	display: inline-block;
+}
+
+
+
+.btn-group{
+	align-content: center;
+}
+
+body{
+	background-image:  url("https:i.pinimg.com/736x/83/6b/66/836b66752ed2c20926c6fc2d4c0d3573.jpg");
+
+	background-repeat: repeat;
+
+	background-size: 1530px;
+}
+
+
+hr{
+	border: none;
+            background-color: #FFFFFF;
+            height: 10px;
+}
+
+
+.container-fluid , header{
+	font-family: Chalkboard;
+}
+
+
+.container-fluid {
+	border-radius: 20px;
+}
+
+
+.calculations{
+	background-color: #B0C5A4;
+	border: 3px dashed #ffffff;
+	border-radius: 20px;
+}
+
+	
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<br/>
+
+<header>
+  <center><h1>Totoro's Calculations 📝🧪</h1></center>
+</header>
+
+<br/>
+ 
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-8 p-3">
+      <h3>Hello! My name is Totoro. Welcome to Totoro's Calculations! Input your chosen number to calculate its total. 👾</h3>
+
+<br/>
+
+<h2>Given:</h2>
+      <form>
+	    <div class="numb mb-3"> 
+	        <label for="inputNumber">Enter a value for x:</label>
+	        <input type="number" class="form-control" id="num1" placeholder="number">
+	    </div>
+
+	    <div class="num mb-3"> 
+	        <label for="inputPassword">Enter a value for y:</label>
+	        <input type="number" class="form-control" id="num2" placeholder="number">
+	    </div>
+
+<button onclick="myFunction()" class="btn btn-success">Info</button>
+
+<script>
+function myFunction() {
+  alert("Click on the buttons below to calculate : )");
+}
+</script>
+
+
+    </div>
+
+
+    <div class="col-sm-4 p-3">
+      <center><img src="https://i.pinimg.com/originals/4d/3f/d5/4d3fd5c79837384de61fd2ca64da03a7.gif" class="rounded" height="300"></center>
+      <br/>
+      <div class="calculations">
+      <center><h1>According to my calculations.. 🔬<h1></center>
+      </div>
+    </div>
+
+ </form></div>
+ <br/>
+ <hr>
+
+ <div class="container">
+ 	<div class="btn-group" style="width:100%">
+  <button style="width:25%" button type="button" class="btn btn-success" onclick="plus()">sum of x and y</button>
+  <button style="width:25%" button type="button" class="btn btn-warning" onclick="multiply()">product of x and y</button>
+ <button style="width:25%" button type="button" class="btn btn-danger" onclick="subtract()">difference of x and y</button>
+  <button style="width:25%" button type="button" class="btn btn-primary" onclick="divide()">quotient of x and y</button>
+</div>
+
+	</form>
+
+
+	<p id="sum">
+
+
+
+
+
+	<script>
+		function plus(){
+			var num1 =
+		document.getElementById("num1").value;
+		  var num2 =
+		document.getElementById("num2").value;
+		  var sum = Number(num1)+Number(num2);
+		document.getElementById("sum").innerHTML= alert("The sum of x and y is:" + sum);
+
+		 if (x.trim() === "" || isNaN(x) || y.trim() === "" || isNaN(y)) {
+                alert("Please enter valid numbers for x and y.");
+                return;
+            }
+		}
+
+
+
+	</script>
+
+     
+
+
+     <p id="result">
+
+    
+
+	    
+	
+	</form>
+
+
+
+
+
+	 <script>
+        function multiply() {
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            var result = Number(x) * Number(y);
+            document.getElementById("result").innerHTML = alert("The product of x and y is: " + result);
+
+
+             if (x.trim() === "" || isNaN(x) || y.trim() === "" || isNaN(y)) {
+                alert("Please enter valid numbers for x and y.");
+                return;
+            }
+        }
+    </script>
+
+
+
+
+    <p id="result">
+
+    
+
+	    
+	
+	</form>
+
+
+
+
+
+	 <script>
+        function subtract() {
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            var result = Number(x) - Number(y);
+            document.getElementById("result").innerHTML = alert("The difference of x and y is: " + result);
+
+
+             if (x.trim() === "" || isNaN(x) || y.trim() === "" || isNaN(y)) {
+                alert("Please enter valid numbers for x and y.");
+                return;
+            }
+
+        }
+    </script>
+
+
+
+    <p id="result">
+
+    
+
+	    
+	
+	</form>
+
+
+
+
+
+	 <script>
+        function divide() {
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            var result = Number(x) / Number(y);
+            document.getElementById("result").innerHTML = alert("The quotient of x and y is: " + result);
+
+
+             if (x.trim() === "" || isNaN(x) || y.trim() === "" || isNaN(y)) {
+                alert("Please enter valid numbers for x and y.");
+                return;
+            }
+        }
+    </script>
+
+   </div>
+    </div>
+
+ </div>
+ </div>
+
+
+
+
+ 
+    
+
+</body>
+</html>
